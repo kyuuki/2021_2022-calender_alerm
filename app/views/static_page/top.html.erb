@@ -4,5 +4,10 @@
   トップページの内容。
 </p>
 
-<button type="button" class="btn btn-primary">Primary</button>
+<% if logged_in? %>
+  <a href="users/log_out" class="btn btn-primary">ログアウト</a>
+<% else %>
+  <a href="users/log_in" class="btn btn-primary">ログイン</a>
+<% end %>
+
 
